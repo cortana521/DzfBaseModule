@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="ThemeSplash" parent="Theme.AppCompat.Light.NoActionBar" tools:ignore="ResourceName">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- 否则效果不对，达不到秒开效果-->
+        <item name="android:windowDisablePreview">false</item>
+        <!--开启底部虚拟导航栏-->
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+    </style>
+
+</resources>
