@@ -6,4 +6,8 @@
     <color name="colorPrimary">@color/nine_image_text_color</color>
     <color name="colorNavigation">@color/nine_image_text_color</color>
     <color name="colorStar">#3e86e3</color>
+    <color name="base_text_color_light">#909090</color>
+    <color name="base_loading_background">#f7f7f7</color>
+    <color name="gray">#898989</color>
+    <color name="background">#f2f2f2</color>
 </resources>

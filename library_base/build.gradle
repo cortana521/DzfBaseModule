@@ -57,5 +57,9 @@ dependencies {
     api rootProject.ext.dependencies["okhttp"]
     api rootProject.ext.dependencies["constraintlayout"]
     api rootProject.ext.dependencies["butterknife"]
+    api rootProject.ext.dependencies["permission"]
     annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    api rootProject.ext.support["recyclerview"]
+    api rootProject.ext.support["design"]
+    api rootProject.ext.support["junit"]
 }

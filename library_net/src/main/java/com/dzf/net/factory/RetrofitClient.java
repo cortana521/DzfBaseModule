@@ -17,7 +17,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
 
-    private static final String API_HOST = "https://www.wanandroid.com/";
+    private static final String API_HOST = "http://ehr.chngsl.com:9208/";
     private static RetrofitClient instance;
     private static OkHttpClient okHttpClient;
     private static Retrofit retrofit;

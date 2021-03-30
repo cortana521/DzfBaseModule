@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="CustomProgressStyle" parent="@android:style/Widget.ProgressBar.Large" tools:ignore="ResourceName">
+        <item name="android:minHeight">10dip</item>
+    </style>
+
+</resources>

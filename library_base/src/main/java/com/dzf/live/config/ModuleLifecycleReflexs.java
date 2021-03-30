@@ -6,15 +6,17 @@ package com.dzf.live.config;
  */
 
 public class ModuleLifecycleReflexs {
-    private static final String BaseInit = "com.play.library_base.base.BaseModuleInit";
+    private static final String BaseInit = "com.dzf.live.base.BaseModuleInit";
     //主业务模块
-    private static final String MainInit = "com.play.module_main.MainModuleInit";
-    //发现业务模块
-    private static final String FindInit = "com.play.module_me.FindModuleInit";
-    //新闻业务模块
-    private static final String NewsInit = "com.play.module_news.NewsModuleInit";
-    //用户业务模块
-    private static final String UserInit = "com.play.module_find.MeModuleInit";
+    private static final String MainInit = "dzf.live.library_main.MainModuleInit";
+    //登录模块
+    private static final String LoginInit = "dzf.live.module_login.LoginModuleInit";
+//    //发现业务模块
+//    private static final String FindInit = "com.play.module_me.FindModuleInit";
+//    //新闻业务模块
+//    private static final String NewsInit = "com.play.module_news.NewsModuleInit";
+//    //用户业务模块
+//    private static final String UserInit = "com.play.module_find.MeModuleInit";
 
-    public static String[] initModuleNames = {BaseInit, MainInit, FindInit, NewsInit,UserInit};
+    public static String[] initModuleNames = { BaseInit,MainInit,LoginInit};
 }

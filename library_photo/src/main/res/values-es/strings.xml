@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="__picker_title" tools:ignore="ExtraTranslation">Imágenes</string>
+    <string name="__picker_delete" tools:ignore="ExtraTranslation">Eliminar</string>
+    <string name="__picker_done" tools:ignore="ExtraTranslation">Ok</string>
+    <string name="__picker_done_with_count" tools:ignore="ExtraTranslation">Ok(%1$d/%2$d)</string>
+    <string name="__picker_image_index" tools:ignore="ExtraTranslation">%1$d/%2$d</string>
+    <string name="__picker_undo" tools:ignore="ExtraTranslation">Deshacer</string>
+    <string name="__picker_deleted_a_photo" tools:ignore="ExtraTranslation">Eliminar una imagen</string>
+    <string name="__picker_confirm_to_delete" tools:ignore="ExtraTranslation">¿Eliminar seguro?</string>
+    <string name="__picker_yes" tools:ignore="ExtraTranslation">Si</string>
+    <string name="__picker_cancel" tools:ignore="ExtraTranslation">Cancelar</string>
+    <string name="__picker_all_image" tools:ignore="ExtraTranslation">Todas las imágenes</string>
+    <string name="__picker_over_max_count_tips" tools:ignore="ExtraTranslation">Sólo se pueden seleccionar %1$d imágenes</string>
+    <string name="__picker_image_count" tools:ignore="ExtraTranslation">%1$d</string>
+</resources>

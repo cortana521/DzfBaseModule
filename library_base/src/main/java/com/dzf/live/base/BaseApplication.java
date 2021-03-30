@@ -5,17 +5,34 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
 
+import com.dzf.live.R;
 import com.dzf.live.utils.Utils;
+import com.dzf.live.view.LoadingLayout;
+
+
 
 public class BaseApplication extends Application {
     private static Application sInstance;
     private Context context;
-
     @Override
     public void onCreate() {
         super.onCreate();
         setApplication(this);
         context = this;
+        LoadingLayout.getConfig()
+                .setErrorText("出错啦~请稍后重试！")
+                .setEmptyText("抱歉，暂无数据")
+                .setNoNetworkText("无网络连接，请检查您的网络···")
+                .setErrorImage(R.drawable.define_error)
+                .setEmptyImage(R.drawable.define_empty)
+                .setNoNetworkImage(R.drawable.define_nonetwork)
+                .setAllTipTextColor(R.color.gray)
+                .setAllTipTextSize(14)
+                .setReloadButtonText("点我重试哦")
+                .setReloadButtonTextSize(14)
+                .setReloadButtonTextColor(R.color.gray)
+                .setReloadButtonWidthAndHeight(150, 40)
+                .setAllPageBackgroundColor(R.color.background);
     }
 
     /**

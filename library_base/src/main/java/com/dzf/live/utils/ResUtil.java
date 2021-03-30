@@ -106,6 +106,17 @@ public class ResUtil {
         return span;
     }
 
+    public static int sp2px(Context context,float spValue) {
+        final float fontScale = context.getResources().getDisplayMetrics()
+                .scaledDensity;
+        return (int) (spValue * fontScale + 0.5f);
+    }
+
+    public static int dp2px(Context context,int dip) {
+        final float scale =  context.getResources().getDisplayMetrics().density;
+        return (int) (dip * scale + 0.5f);
+    }
+
     /**
      * 改变颜色透明度
      *

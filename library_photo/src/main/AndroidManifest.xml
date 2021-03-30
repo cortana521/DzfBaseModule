@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dzf.live.library_photo">
+    <application tools:ignore="GoogleAppIndexingWarning">
+        <!--在自己组件中注册Activity-->
+        <activity
+            android:name=".PhotoPagerActivity"
+            android:configChanges="locale|layoutDirection|keyboard"
+            android:theme="@style/customTheme"
+            tools:ignore="WrongManifestParent" />
+        <activity
+            android:name=".PhotoPickerActivity"
+            android:configChanges="locale|layoutDirection|keyboard"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            tools:ignore="WrongManifestParent" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/__picker_provider_paths"/>
+        </provider>
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="423ff17515038a50c41085cc2dbd0087d2e51cbb" />
+    </application>
+
+</manifest>

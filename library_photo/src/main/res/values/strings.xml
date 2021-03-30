@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="__picker_title">Images</string>
+  <string name="__picker_delete">Delete</string>
+  <string name="__picker_done">Done</string>
+  <string name="__picker_done_with_count">Done(%1$d/%2$d)</string>
+  <string name="__picker_image_index">%1$d/%2$d</string>
+  <string name="__picker_undo">Undo</string>
+  <string name="__picker_deleted_a_photo">Deleted a photo</string>
+  <string name="__picker_confirm_to_delete">Confirm to delete?</string>
+  <string name="__picker_yes">Yes</string>
+  <string name="__picker_cancel">Cancel</string>
+  <string name="__picker_all_image">All Images</string>
+  <string name="__picker_image_count">%1$d</string>
+  <string name="__picker_over_max_count_tips">You can only select %1$d images</string>
+  <string name="xrefreshview_header_hint_normal" translatable="false">下拉刷新</string>
+  <string name="xrefreshview_header_hint_ready" translatable="false">松开刷新数据</string>
+  <string name="xrefreshview_header_hint_refreshing" translatable="false">正在刷新...</string>
+  <string name="xrefreshview_header_hint_loading" translatable="false">正在加载数据...</string>
+  <string name="xrefreshview_header_hint_loaded" translatable="false">加载完成</string>
+  <string name="xrefreshview_header_hint_loaded_fail" translatable="false">加载失败</string>
+  <string name="xrefreshview_header_last_time" translatable="false">上次更新时间：</string>
+  <string name="xrefreshview_footer_hint_normal" translatable="false">加载完成</string>
+  <string name="xrefreshview_footer_hint_fail" translatable="false">加载失败，请重试</string>
+  <string name="xrefreshview_footer_hint_complete" translatable="false">已无更多数据</string>
+  <string name="xrefreshview_footer_hint_click" translatable="false">点击加载更多</string>
+  <string name="xrefreshview_footer_hint_release" translatable="false">松开加载更多</string>
+  <string name="xscrollview_footer_hint_normal" translatable="false">加载更多</string>
+  <string name="xrefreshview_footer_hint_ready" translatable="false">松开载入更多</string>
+  <string name="xrefreshview_never_refresh" translatable="false">从未刷新</string>
+  <string name="xrefreshview_refresh_justnow" translatable="false">刚刚刷新</string>
+  <string name="xrefreshview_refresh_minutes_ago" translatable="false">%1s分钟之前刷新</string>
+  <string name="xrefreshview_refresh_hours_ago" translatable="false">%1s小时之前刷新</string>
+  <string name="xrefreshview_refresh_days_ago" translatable="false">%1s天之前刷新</string>
+</resources>

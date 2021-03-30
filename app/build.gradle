@@ -75,8 +75,8 @@ dependencies {
         implementation project(':library_net')
 //        implementation project(':library_res')
     } else {
-        //主业务模块
-//        implementation project(':module_main')
+//        主业务模块
+        implementation project(':module_main')
         //发现模块
 //        implementation project(':module_find')
         //新闻模块

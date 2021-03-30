@@ -32,7 +32,7 @@ public interface LoginApiService {
      * @param password
      * @return
      */
-    @POST("/index.php?g=mobile&m=register&a=login")
+    @POST("index.php?g=mobile&m=register&a=login")
     @FormUrlEncoded
     Observable<BaseResponse<LoginBean>> login(@Field("telephone") String telephone,
                                               @Field("password") String password);

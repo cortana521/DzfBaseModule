@@ -50,4 +50,16 @@
         <attr name="zoomMax" format="dimension|reference" />
     </declare-styleable>
 
+    <style name="customTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionBarTheme">@style/actionBarTheme</item>
+        <item name="colorPrimary">#38393E</item>
+        <item name="colorPrimaryDark">#2F3034</item>
+        <item name="actionBarSize">56dip</item>
+    </style>
+
+    <style name="actionBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="actionBarSize">56dip</item>
+    </style>
+
 </resources>

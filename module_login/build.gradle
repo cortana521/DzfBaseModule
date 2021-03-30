@@ -23,6 +23,7 @@ dependencies {
     api project(':library_net')
     api project(':library_mvp')
     api project(':library_base')
+    implementation project(':library_photo')
     //组件中依赖阿里路由编译框架
     annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
     annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]

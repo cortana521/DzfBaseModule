@@ -1,7 +1,11 @@
 package dzf.live.module_login.contract;
 
+import android.app.Activity;
+
 import com.dzf.mvp.BasePresenter;
 import com.dzf.mvp.BaseViewImp;
+
+import java.util.ArrayList;
 
 import dzf.live.module_login.bean.LoginBean;
 import dzf.live.module_login.bean.RegisterBean;
@@ -22,6 +26,8 @@ public interface LoginContract {
        public abstract void register(String username, String password, String repassword);
 
        public abstract void login(String username, String password);
+
+       public abstract void initPhotoPicker(Activity context, ArrayList selectedPhotos);
     }
 
 }

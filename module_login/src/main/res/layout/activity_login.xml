@@ -14,6 +14,7 @@
         android:layout_marginTop="@dimen/dimen_148_dp"
         android:src="@mipmap/ic_launcher" />
 
+
     <com.dzf.live.view.ClearEditText
         android:id="@+id/cetName"
         android:layout_width="match_parent"
@@ -31,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/cetName"
         android:hint="请输入密码"
+        android:inputType="textPassword"
         android:layout_marginLeft="@dimen/dimen_20_dp"
         android:layout_marginTop="@dimen/dimen_20_dp"
         android:layout_marginRight="@dimen/dimen_20_dp" />
