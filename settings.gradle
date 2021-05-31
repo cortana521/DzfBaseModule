@@ -1,1 +1,2 @@
+include ':library_party'
 include ':app', ':library_base',':library_net', ':library_mvp', ':module_login', ':library_photo', ':module_main'

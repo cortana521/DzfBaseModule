@@ -28,6 +28,9 @@ public interface LoginContract {
        public abstract void login(String username, String password);
 
        public abstract void initPhotoPicker(Activity context, ArrayList selectedPhotos);
+
+       public abstract void initJsonData();
+
     }
 
 }

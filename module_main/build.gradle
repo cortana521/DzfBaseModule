@@ -1,5 +1,4 @@
 apply from: "../module.build.gradle"
-apply plugin: 'com.jakewharton.butterknife'//这一句才是重点
 android {
     //统一资源前缀，规范资源引用
     resourcePrefix "main_"
@@ -10,9 +9,8 @@ android {
         }
     }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+    buildFeatures {
+        viewBinding = true
     }
 
 }
@@ -25,5 +23,4 @@ dependencies {
     api project(':library_base')
     //组件中依赖阿里路由编译框架
     annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
-    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
 }

@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/dimen_148_dp"
+        android:layout_marginTop="@dimen/dp_145"
         android:src="@mipmap/ic_launcher" />
 
 
@@ -21,9 +21,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ivPic"
         android:hint="请输入账号"
-        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:background="@null"
+        android:layout_marginLeft="@dimen/dp_20"
         android:layout_marginTop="@dimen/dimen_48_dp"
-        android:layout_marginRight="@dimen/dimen_20_dp" />
+        android:layout_marginRight="@dimen/dp_20" />
 
 
     <com.dzf.live.view.ClearEditText
@@ -32,10 +33,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/cetName"
         android:hint="请输入密码"
+        android:background="@null"
         android:inputType="textPassword"
-        android:layout_marginLeft="@dimen/dimen_20_dp"
-        android:layout_marginTop="@dimen/dimen_20_dp"
-        android:layout_marginRight="@dimen/dimen_20_dp" />
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20" />
 
     <TextView
         android:id="@+id/tvLogin"
@@ -45,9 +47,9 @@
         android:text="登录"
         android:gravity="center"
         android:textSize="18dp"
-        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:layout_marginLeft="@dimen/dp_20"
         android:layout_marginTop="40dp"
-        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:layout_marginRight="@dimen/dp_20"
         android:background="#6DD6DE" />
 
     <TextView
@@ -60,7 +62,7 @@
         android:gravity="center"
         android:textSize="18dp"
         android:layout_marginTop="20dp"
-        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:layout_marginRight="@dimen/dp_20"
         />
 
 

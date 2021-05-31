@@ -11,6 +11,7 @@ import com.dzf.live.router.RouterActivityPath;
 import com.dzf.live.utils.ToastUtils;
 import com.dzf.live.view.ClearEditText;
 import com.dzf.mvp.BaseActivity;
+import com.dzf.mvp.BaseModel;
 
 import dzf.live.module_login.R;
 import dzf.live.module_login.bean.LoginBean;
@@ -67,6 +68,31 @@ public class RegisterActivity extends BaseActivity<LoginContract.View, LoginCont
 
     @Override
     public void hideLoading() {
+
+    }
+
+    @Override
+    public void showError(String msg) {
+
+    }
+
+    @Override
+    public void onErrorCode(BaseModel model) {
+
+    }
+
+    @Override
+    public void showProgress() {
+
+    }
+
+    @Override
+    public void hideProgress() {
+
+    }
+
+    @Override
+    public void onProgress(int progress) {
 
     }
 

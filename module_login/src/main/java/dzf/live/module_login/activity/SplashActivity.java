@@ -7,6 +7,7 @@ import android.os.Handler;
 
 import com.dzf.live.utils.StatusBarUtil;
 import com.dzf.mvp.BaseActivity;
+import com.dzf.mvp.BaseModel;
 
 import dzf.live.module_login.R;
 import dzf.live.module_login.contract.SplashContract;
@@ -58,6 +59,31 @@ public class SplashActivity extends BaseActivity<SplashContract.View,
 
     @Override
     public void hideLoading() {
+
+    }
+
+    @Override
+    public void showError(String msg) {
+
+    }
+
+    @Override
+    public void onErrorCode(BaseModel model) {
+
+    }
+
+    @Override
+    public void showProgress() {
+
+    }
+
+    @Override
+    public void hideProgress() {
+
+    }
+
+    @Override
+    public void onProgress(int progress) {
 
     }
 }

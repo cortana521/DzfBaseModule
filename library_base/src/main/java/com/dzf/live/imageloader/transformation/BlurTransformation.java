@@ -1,4 +1,4 @@
-package com.play.library_base.imageloader.transformation;
+package com.dzf.live.imageloader.transformation;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -11,7 +11,7 @@ import androidx.annotation.RequiresApi;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapTransformation;
 import com.bumptech.glide.util.Util;
-import com.play.library_base.imageloader.util.BlurUtils;
+import com.dzf.live.imageloader.util.BlurUtils;
 
 import java.security.MessageDigest;
 

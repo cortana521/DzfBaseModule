@@ -3,7 +3,6 @@ package com.dzf.mvp;
 
 import android.content.Context;
 
-
 import com.dzf.net.factory.RetrofitClient;
 
 import java.lang.ref.WeakReference;
@@ -21,7 +20,6 @@ public abstract class BasePresenter<V extends BaseViewImp> {
     protected WeakReference<V> viewRef;
     // 管理订阅关系，用于取消订阅
     protected CompositeDisposable compositeDisposable;
-
     protected Context mContext;
 
 
@@ -46,10 +44,18 @@ public abstract class BasePresenter<V extends BaseViewImp> {
         if (compositeDisposable == null) {
             compositeDisposable = new CompositeDisposable();
         }
-      BaseObserver baseObserver = observable.subscribeOn(Schedulers.newThread())
+        compositeDisposable.add(observable.subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
-                .subscribeWith(observer);
-        compositeDisposable.add(baseObserver);
+                .subscribeWith(observer));
+    }
+
+    public void addFileDisposable(Observable<?> observable, FileObserver observer) {
+        if (compositeDisposable == null) {
+            compositeDisposable = new CompositeDisposable();
+        }
+        compositeDisposable.add(observable.subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeWith(observer));
     }
 
     /**

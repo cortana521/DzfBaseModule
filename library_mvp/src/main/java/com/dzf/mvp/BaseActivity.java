@@ -1,5 +1,6 @@
 package com.dzf.mvp;
 
+import android.annotation.SuppressLint;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
@@ -8,8 +9,9 @@ import android.view.Window;
 import com.dzf.live.utils.ResUtil;
 import com.dzf.live.utils.StatusBarUtil;
 
+import org.greenrobot.eventbus.EventBus;
+
 import androidx.appcompat.app.AppCompatActivity;
-import butterknife.ButterKnife;
 
 
 /**
@@ -20,6 +22,7 @@ public abstract class BaseActivity<V extends BaseViewImp, P extends BasePresente
     //引用V层和P层
     private P presenter;
     private V view;
+
     public P getPresenter() {
         return presenter;
     }
@@ -33,7 +36,6 @@ public abstract class BaseActivity<V extends BaseViewImp, P extends BasePresente
         if (isOpenImmersive()) {
             immersive();
         }
-        ButterKnife.bind(this);
         setContentView(getLayoutId());
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // 禁止所有的activity横屏
 
@@ -47,6 +49,8 @@ public abstract class BaseActivity<V extends BaseViewImp, P extends BasePresente
             presenter.attachView(view);
         }
         init();
+        initData();
+        initListener();
     }
 
     //由子类指定具体类型
@@ -58,10 +62,12 @@ public abstract class BaseActivity<V extends BaseViewImp, P extends BasePresente
 
     public abstract void init();
 
+    public abstract void initData();
+
+    public abstract void initListener();
+
     /**
      * 是否使用沉浸式，子类复写该方法来确定是否采用沉浸式
-     *
-     * @return
      */
     public boolean isOpenImmersive() {
         return true;
@@ -70,14 +76,24 @@ public abstract class BaseActivity<V extends BaseViewImp, P extends BasePresente
     /**
      * 具体沉浸的样式，可以根据需要自行修改状态栏和导航栏的颜色
      */
-    public void immersive() {
-        StatusBarUtil.setColor(this, ResUtil.getColor(R.color.nine_image_text_color),0);
-        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+    @SuppressLint("InlinedApi")
+    private void immersive() {
+        StatusBarUtil.setColor(this, ResUtil.getColor(R.color.button), 0);
+//        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        // 注册
+//        EventBus.getDefault().register(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        // 注销
+//        EventBus.getDefault().unregister(this);
         if (presenter != null) {
             presenter.detachView();
         }

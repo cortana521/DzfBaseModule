@@ -36,6 +36,7 @@ public class RetrofitClient {
                 .hostnameVerifier(SSLSocketClient.getHostnameVerifier())
                 .addInterceptor(InterceptorUtil.logInterceptor())
                 .addInterceptor(InterceptorUtil.headerInterceptor())
+                .retryOnConnectionFailure(true)
                 .build();
 
         retrofit = new Retrofit.Builder()

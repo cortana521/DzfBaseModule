@@ -16,7 +16,7 @@ import android.widget.ProgressBar;
 import androidx.annotation.IntDef;
 
 import com.dzf.live.R;
-import com.play.library_base.imageloader.util.Utils;
+import com.dzf.live.imageloader.util.Utils;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

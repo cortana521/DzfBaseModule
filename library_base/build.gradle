@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.jakewharton.butterknife'//这一句才是重点
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
     defaultConfig {
@@ -26,6 +25,8 @@ android {
             }
         }
     }
+
+
     buildTypes {
         debug {
             minifyEnabled false
@@ -51,15 +52,15 @@ dependencies {
     api rootProject.ext.dependencies["rxlifecycle-components"]
     //阿里路由框架
     api rootProject.ext.dependencies["glide"]
+    api rootProject.ext.dependencies["eventbus"]
     annotationProcessor rootProject.ext.dependencies["glide-compiler"]
     annotationProcessor rootProject.ext.dependencies["androidx-annotation"]
     api rootProject.ext.dependencies["glide-annotations"]
     api rootProject.ext.dependencies["okhttp"]
     api rootProject.ext.dependencies["constraintlayout"]
-    api rootProject.ext.dependencies["butterknife"]
     api rootProject.ext.dependencies["permission"]
-    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
     api rootProject.ext.support["recyclerview"]
     api rootProject.ext.support["design"]
     api rootProject.ext.support["junit"]
+//    api rootProject.ext.dependencies["greendao"]
 }

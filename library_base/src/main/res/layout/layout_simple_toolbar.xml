@@ -27,7 +27,7 @@
             android:layout_gravity="center"
             android:singleLine="true"
             android:textColor="@color/nine_image_text_color"
-            android:textSize="@dimen/dimen_15_dp"
+            android:textSize="@dimen/dp_15"
             android:visibility="visible" />
 
         <TextView
@@ -40,7 +40,7 @@
             android:padding="5dp"
             android:text="dfsdfs"
             android:textColor="@color/nine_image_text_color"
-            android:textSize="@dimen/dimen_15_dp"
+            android:textSize="@dimen/dp_15"
             android:visibility="gone" />
 
         <ImageView
@@ -62,7 +62,7 @@
             android:layout_marginRight="8dp"
             android:padding="5dp"
             android:text=""
-            android:textSize="@dimen/dimen_15_dp"
+            android:textSize="@dimen/dp_15"
             android:textColor="@color/nine_image_text_color"
             android:visibility="gone" />
     </androidx.appcompat.widget.Toolbar>

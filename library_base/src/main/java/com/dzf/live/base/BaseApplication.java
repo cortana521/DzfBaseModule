@@ -33,6 +33,7 @@ public class BaseApplication extends Application {
                 .setReloadButtonTextColor(R.color.gray)
                 .setReloadButtonWidthAndHeight(150, 40)
                 .setAllPageBackgroundColor(R.color.background);
+
     }
 
     /**

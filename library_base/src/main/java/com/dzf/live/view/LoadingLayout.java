@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.dzf.live.R;
+import com.dzf.live.imageloader.util.Utils;
 import com.dzf.live.utils.LoadingLayoutUtils;
 import com.dzf.live.utils.ResUtil;
 
@@ -175,8 +176,8 @@ public class LoadingLayout extends FrameLayout {
         }
         if (mConfig.buttonWidth != -1) {
 
-            errorReloadBtn.setWidth(com.play.library_base.imageloader.util.Utils.dp2px(mContext, mConfig.buttonWidth));
-            networkReloadBtn.setWidth(com.play.library_base.imageloader.util.Utils.dp2px(mContext, mConfig.buttonWidth));
+            errorReloadBtn.setWidth(Utils.dp2px(mContext, mConfig.buttonWidth));
+            networkReloadBtn.setWidth(Utils.dp2px(mContext, mConfig.buttonWidth));
         }
 
         this.addView(networkPage);

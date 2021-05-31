@@ -1,4 +1,4 @@
-package com.play.library_base.imageloader.transformation;
+package com.dzf.live.imageloader.transformation;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapShader;

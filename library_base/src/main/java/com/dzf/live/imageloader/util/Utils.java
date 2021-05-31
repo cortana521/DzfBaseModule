@@ -1,4 +1,4 @@
-package com.play.library_base.imageloader.util;
+package com.dzf.live.imageloader.util;
 
 import android.content.Context;
 import android.graphics.Bitmap;

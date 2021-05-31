@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/dimen_148_dp"
+        android:layout_marginTop="@dimen/dp_145"
         android:src="@mipmap/ic_launcher" />
 
     <com.dzf.live.view.ClearEditText
@@ -20,10 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ivPic"
-        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:layout_marginLeft="@dimen/dp_20"
         android:background="@null"
         android:layout_marginTop="48dp"
-        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:layout_marginRight="@dimen/dp_20"
         android:hint="请输入账号" />
 
 
@@ -32,10 +32,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cetName1"
-        android:layout_marginLeft="@dimen/dimen_20_dp"
-        android:layout_marginTop="@dimen/dimen_20_dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
         android:background="@null"
-        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:layout_marginRight="@dimen/dp_20"
         android:hint="请输入密码" />
 
     <com.dzf.live.view.ClearEditText
@@ -43,10 +43,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/cetPsd1"
-        android:layout_marginLeft="@dimen/dimen_20_dp"
-        android:layout_marginTop="@dimen/dimen_20_dp"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
         android:background="@null"
-        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:layout_marginRight="@dimen/dp_20"
         android:hint="请再次输入密码" />
 
     <TextView
@@ -54,9 +54,9 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_below="@+id/cetPsd2"
-        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:layout_marginLeft="@dimen/dp_20"
         android:layout_marginTop="40dp"
-        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:layout_marginRight="@dimen/dp_20"
         android:background="#6DD6DE"
         android:gravity="center"
         android:text="注册"

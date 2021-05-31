@@ -6,5 +6,5 @@ package dzf.live.library_main.apiservice;
  * Date: 2021/3/29
  * Time: 14:53
  */
-public class MainApiService {
+public interface MainApiService {
 }

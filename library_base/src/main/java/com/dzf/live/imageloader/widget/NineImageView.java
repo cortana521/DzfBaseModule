@@ -17,7 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.dzf.live.R;
-import com.play.library_base.imageloader.util.Utils;
+import com.dzf.live.imageloader.util.Utils;
 
 import java.util.List;
 

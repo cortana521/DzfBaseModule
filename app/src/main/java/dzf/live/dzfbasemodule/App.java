@@ -1,6 +1,5 @@
 package dzf.live.dzfbasemodule;
 
-import com.alibaba.android.arouter.launcher.ARouter;
 import com.dzf.live.base.BaseApplication;
 import com.dzf.live.config.ModuleLifecycleConfig;
 

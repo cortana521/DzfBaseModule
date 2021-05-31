@@ -22,7 +22,7 @@ import com.bumptech.glide.load.resource.gif.GifDrawable;
 import com.bumptech.glide.request.target.DrawableImageViewTarget;
 import com.bumptech.glide.request.transition.Transition;
 import com.dzf.live.R;
-import com.play.library_base.imageloader.util.Utils;
+import com.dzf.live.imageloader.util.Utils;
 
 /**
  * @author sunfusheng on 2018/6/19.

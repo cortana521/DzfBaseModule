@@ -3,7 +3,7 @@ ext {
     android = [
             compileSdkVersion: 30,
             applicationId    : "dzf.live.dzfbasemodule",
-            minSdkVersion    : 26,
+            minSdkVersion    : 21,
             targetSdkVersion : 30,
             versionCode      : 1,
             versionName      : "1.0",
@@ -52,11 +52,11 @@ ext {
             //阿里路由框架
             "arouter-api"           : "com.alibaba:arouter-api:1.4.1",
             "arouter-compiler"      : "com.alibaba:arouter-compiler:1.2.2",
+            "eventbus"              : "org.greenrobot:eventbus:3.1.1",
             'androidx-annotation'   : "androidx.annotation:annotation:1.0.0",
             "constraintlayout"      : "androidx.constraintlayout:constraintlayout:2.0.4",
-            "butterknife"           : "com.jakewharton:butterknife:9.0.0",
-            "butterknife-compiler"  : "com.jakewharton:butterknife-compiler:9.0.0",
-            "permission"            : "com.yanzhenjie:permission:2.0.0-rc4"
+            "permission"            : "com.yanzhenjie:permission:2.0.0-rc4",
+            "greendao"              : "org.greenrobot:greendao:3.3.0" // add library
     ]
 }
 
